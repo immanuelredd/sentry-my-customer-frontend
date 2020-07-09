@@ -28,10 +28,15 @@
                 <button class="nav__button "><a href="/admin/login" class="nav__button__link">Log In</a></button>
                 <a href="{{ route('signup') }}" class="nav__button btn-nav-active">Sign Up</a>
                 @elseif(isset($_COOKIE['api_token']))
-                <button class="nav__button btn-nav-active"><a href="{{ route('dashboard') }}"
-                        class="nav__button__link__active">Dashboard</a></button>
-                <button class="nav__button btn-nav-active"><a href="{{ route('logout') }}"
-                        class="nav__button__link__active">Logout</a></button>
+                {{-- <button class="nav__button btn-nav-active"> --}}
+                    <a href="{{ route('dashboard') }}"
+                        class="nav__button btn-nav-active nav__button__link__active">Dashboard</a>
+                    {{-- </button> --}}
+                {{-- <button class=""> --}}
+                    <a href="{{ route('logout') }}"
+                        class="nav__button btn-nav-active nav__button__link__active">Logout
+                    </a>
+                    {{-- </button> --}}
                 @endif
             </div>
             <div class="hamburger-container">
@@ -47,9 +52,9 @@
                 <i class="fas fa-times"></i>
 
             </div>
-            <div class="mobile__nav__menu">
+            <div class="mobile__nav__menu container w-100">
                 <img src="{{ ('/frontend/assets/images/fulllogo.png') }}" alt="" height="auto"
-                    style="max-width: 60%" /></a>
+                    style="max-width: 60%"/></a>
                 <div class="mobile__menu__container">
                     <ul class="mobile__menu__list">
                         <li class="mobile__menu__list__item">
