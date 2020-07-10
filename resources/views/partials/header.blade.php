@@ -52,9 +52,9 @@
                 <i class="fas fa-times"></i>
 
             </div>
-            <div class="mobile__nav__menu container w-100">
-                <img src="{{ ('/frontend/assets/images/fulllogo.png') }}" alt="" height="auto"
-                    style="max-width: 60%"/></a>
+            <div class="mobile__nav__menu">
+               <a href="#"></a> <img src="{{ ('/frontend/assets/images/fulllogo.png') }}" alt="" height="auto"
+                    style="max-width: 60%" class="text-center"/></a>
                 <div class="mobile__menu__container">
                     <ul class="mobile__menu__list">
                         <li class="mobile__menu__list__item">
@@ -98,7 +98,7 @@
                     </h1>
                     <h1 class="mobile__nav__h1">
                         <a href="{{ route('signup') }}" class="mobile__nav__h1__link">
-                            <img src="{{ ('/frontend/assets/images/Vector 3.png') }}" />
+                          {{-- <imgsrc="('/frontend/assets/images/Vector3.png') " /> --}}
                             Sign Up
                         </a>
                     </h1>
