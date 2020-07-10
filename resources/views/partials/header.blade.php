@@ -93,7 +93,7 @@
                     @if(!isset($_COOKIE['api_token']))
                     <h1 class="mobile__nav__h1">
                         <a href="{{ route('login') }}" class="mobile__nav__h1__link">
-                            <img src="{{ ('/frontend/assets/images/Vector 3.png') }}" />
+                          {{--   <img src="{{ ('/frontend/assets/images/Vector 3.png') }}" />--}}
                             Log In</a>
                     </h1>
                     <h1 class="mobile__nav__h1">
@@ -108,7 +108,8 @@
                             {{-- <img src="{{ ('/frontend/assets/images/Vector 3.png') }}" /> --}}
                             Dashboard
                         </a>
-
+                     </h1>
+                     <h1 class="mobile__nav__h1">
                         <a href="{{ route('logout') }}" class="mobile__nav__h1__link">
                             {{-- <img src="{{ ('/frontend/assets/images/Vector 3.png') }}" /> --}}
                             Logout

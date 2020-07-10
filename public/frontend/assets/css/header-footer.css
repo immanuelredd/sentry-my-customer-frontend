@@ -190,15 +190,20 @@ nav {
 
 .mobile-menu {
     display: none;
-    background-color: var(--secondary) !important;
     color: #fff !important;
     /* background-image: linear-gradient(120deg, #f8e093 0%, #fda085 100%);} */
 }
-
-/*.mobile__menu__list>li {
-    margin-left: -40vw;
-    margin-top: -2vh;
-} */
+.mobile-menu::before{
+    content: "";
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color:white !important;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
 
 .mobile__menu__list__item {
     padding-top: 0.5em;
@@ -209,21 +214,11 @@ nav {
 }
 .mobile__menu__list__item:hover{
 border-color: var(--secondary) !important;
-width: 150%;
 transition: all .5s;
 }
 
-/*
-.mobile__menu__list_link_diff {
-    margin-left: 10vw;
-}
-
-.mobile__menu__list_link_diff1 {
-    margin-left: -2vw;
-} 
-
 a.mobile__menu__list__link {
-    color: #fff !important;
+    color: #000 !important;
 }
 
 hr.hr-mobile {
@@ -235,7 +230,7 @@ hr.hr-mobile {
 }
 
 .close-mobile-menu i {
-    color: rgb(73, 81, 196);
+    color: #000000!important;
 }
 
 h1.mobile__nav__h1 {
@@ -250,14 +245,13 @@ a.mobile__menu__list__link>img {
     margin: auto;
 }
 .h1-group-vertical a:hover{
-   border: 2px solid var(--secondary) !important;
-   padding-right: 1.5em;
-   background-color: var(--secondary);
+   border-bottom: 2px solid var(--secondary) !important;
    color: black;
+   width: 100%;
 }
 a.mobile__nav__h1__link {
     font-size: 20px;
-    color: #fff !important;
+    color: #000000 !important;
 }
 
 a.mobile__nav__h1__link>img {
@@ -426,12 +420,12 @@ footer {
     }
 
     .mobile__menu__list__item {
-        color: #fff;
+        color: var(--primary-dark) !important;
         margin: 0;
     }
 
     .mobile__menu__list__link {
-        color: #fff;
+        color: #000 !important;
         font-family: 'gilroysemibold';
         font-size: 18px;
     }
@@ -450,7 +444,7 @@ footer {
     }
 
     .close-mobile-menu i {
-        color: white;
+        color: #000000;
     }
 
     .mobile__nav__button {
